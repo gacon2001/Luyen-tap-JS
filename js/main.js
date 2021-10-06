@@ -26,9 +26,11 @@ document.getElementById("txtTB").innerHTML=trungbinh;
 /**BÀI 3 */
 
 document.getElementById("btnQĐT").onclick = function () {
-    var sotienviet = document.getElementById("soUSD").value * 23.500;
-console.log(sotienviet);
-    document.getElementById("txtQĐT").innerHTML = sotienviet;
+    var sotienviet = document.getElementById("soUSD").value * 23500;
+    console.log(new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sotienviet));
+
+    document.getElementById("txtQĐT").innerHTML = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sotienviet);
+    
 }
 
 /**BÀI 4 */
