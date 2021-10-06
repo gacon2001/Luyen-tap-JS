@@ -2,8 +2,6 @@
 var luongmotngay = 100000;
 
 document.getElementById("btnluong").onclick = function() {
-    // khi click vô thì mới lấy giá trị từ trên dom. Lấy trước khi ấn nút thì nó lấy về số 0 do chưa nhập gì hết
-    // nhớ comment phân tích code đồ vô nha
     var luong = luongmotngay * document.getElementById("songaylam").value;
 
     console.log(luong);
